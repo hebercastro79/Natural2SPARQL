@@ -75,9 +75,9 @@ except Exception as e:
 # --------------------------------------------
 
 # --- Constantes e Caminhos ---
-CAMINHO_DICIONARIO_SINONIMOS = r'C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\resultado_similaridade.txt'
-CAMINHO_PERGUNTAS_INTERESSE = r'C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\perguntas_de_interesse.txt'
-CAMINHO_DICIONARIO_VERBOS = r'C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\dicionario_verbos.txt'
+CAMINHO_DICIONARIO_SINONIMOS = r'C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\resultado_similaridade.txt'
+CAMINHO_PERGUNTAS_INTERESSE = r'C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\perguntas_de_interesse.txt'
+CAMINHO_DICIONARIO_VERBOS = r'C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\dicionario_verbos.txt'
 # --------------------------------------------------------------------
 
 pronomes_interrogativos = ['quem', 'o que', 'que', 'qual', 'quais', 'quanto', 'quantos', 'onde', 'como', 'quando', 'por que', 'porquê']

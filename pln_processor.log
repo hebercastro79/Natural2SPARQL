@@ -1,90 +1,93 @@
-2025-04-03 14:47:26,436 - INFO - Encoding UTF-8 (com replace) forçado para stdout/stderr.
-2025-04-03 14:47:26,689 - INFO - Pacotes NLTK verificados/baixados.
-2025-04-03 14:47:28,412 - INFO - Modelo spaCy 'pt_core_news_sm' carregado.
-2025-04-03 14:47:28,412 - INFO - --- Iniciando processamento PLN (PID: 5384) ---
-2025-04-03 14:47:28,412 - INFO - Pergunta recebida: 'Qual foi o preço de abertura da CBAV3 em 08/05/2023?'
-2025-04-03 14:47:28,412 - DEBUG - Tentando carregar arquivo: C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\perguntas_de_interesse.txt
-2025-04-03 14:47:28,413 - INFO - Arquivo C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\perguntas_de_interesse.txt lido com encoding: utf-8
-2025-04-03 14:47:28,413 - DEBUG - Carregadas 18 linhas de C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\perguntas_de_interesse.txt
-2025-04-03 14:47:28,413 - DEBUG - Tentando carregar arquivo: C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\resultado_similaridade.txt
-2025-04-03 14:47:28,415 - INFO - Arquivo C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\resultado_similaridade.txt lido com encoding: utf-8
-2025-04-03 14:47:28,415 - DEBUG - Carregadas 169 linhas de C:\Users\MENICIO JR\Desktop\Programa_heber2- antes\src\main\resources\resultado_similaridade.txt
-2025-04-03 14:47:28,420 - INFO - Dicionário 'resultado_similaridade.txt' carregado: 149 chaves.
-2025-04-03 14:47:28,474 - DEBUG - Texto para spaCy: 'Qual foi o preço de abertura da CBAV3 em 08/05/2023?'
-2025-04-03 14:47:28,474 - DEBUG - Elementos extraídos (SPO): {'sujeito': ['o preço de abertura da CBAV3 em 08/05/2023'], 'predicado': [], 'objeto': []}
-2025-04-03 14:47:28,474 - DEBUG - Entidades Nomeadas extraídas (NER): {'ORG': ['CBAV3']}
-2025-04-03 14:47:28,480 - INFO - Data explícita '08/05/2023' normalizada para: 2023-05-08
-2025-04-03 14:47:28,481 - DEBUG - Normalizada pergunta para template: 'qual foi o preco de abertura da cbav3 em 08/05/2023 ' (Limiar: 0.65)
-2025-04-03 14:47:28,481 - DEBUG - Comparando com 18 templates.
-2025-04-03 14:47:28,482 - DEBUG -   Linha 1: 'Template 1A - Qual foi o preço de fechamento da ação da CSN em 08/05/2023?'
-2025-04-03 14:47:28,483 - DEBUG -     -> Exemplo norm: 'qual foi o preco de fechamento da acao da csn em 08/05/2023 ', Similaridade: 0.7857
-2025-04-03 14:47:28,483 - DEBUG -     -> NOVA MAIOR SIMILARIDADE! Nome: 'Template 1A'
-2025-04-03 14:47:28,483 - DEBUG -   Linha 2: 'Template 1B - Qual foi o preço de abertura da CBAV3 em 08/05/2023?'
-2025-04-03 14:47:28,483 - DEBUG -     -> Exemplo norm: 'qual foi o preco de abertura da cbav3 em 08/05/2023 ', Similaridade: 1.0000
-2025-04-03 14:47:28,483 - DEBUG -     -> NOVA MAIOR SIMILARIDADE! Nome: 'Template 1B'
-2025-04-03 14:47:28,483 - DEBUG -   Linha 3: 'Template 2A - Qual o código de negociação da ação da Gerdau?'
-2025-04-03 14:47:28,484 - DEBUG -     -> Exemplo norm: 'qual o codigo de negociacao da acao da gerdau ', Similaridade: 0.4898
-2025-04-03 14:47:28,484 - DEBUG -   Linha 4: 'Template 3A - Quais são as ações do setor elétrico?'
-2025-04-03 14:47:28,485 - DEBUG -     -> Exemplo norm: 'quais sao as acoes do setor eletrico ', Similaridade: 0.2472
-2025-04-03 14:47:28,485 - DEBUG -   Linha 5: 'Template 4A - Qual foi o volume negociado nas ações do setor bancário em 05/05/2023??'
-2025-04-03 14:47:28,486 - DEBUG -     -> Exemplo norm: 'qual foi o volume negociado nas acoes do setor bancario em 05/05/2023  ', Similaridade: 0.5528
-2025-04-03 14:47:28,486 - DEBUG -   Linha 6: 'Template 4B - Qual foi a quantidade de ações do Itau negociadas no pregão de 05/05/2023?'
-2025-04-03 14:47:28,487 - DEBUG -     -> Exemplo norm: 'qual foi a quantidade de acoes do itau negociadas no pregao de 05/05/2023 ', Similaridade: 0.4603
-2025-04-03 14:47:28,487 - DEBUG -   Linha 7: 'Template 5A - Qual foi o preço mínimo da ação da Vale em 08/05/2023?'
-2025-04-03 14:47:28,487 - DEBUG -     -> Exemplo norm: 'qual foi o preco minimo da acao da vale em 08/05/2023 ', Similaridade: 0.7358
-2025-04-03 14:47:28,487 - DEBUG -   Linha 8: 'Template 5B - Qual foi o preço mínima da ação preferencial do Itau em 05/05/2023?'
-2025-04-03 14:47:28,488 - DEBUG -     -> Exemplo norm: 'qual foi o preco minima da acao preferencial do itau em 05/05/2023 ', Similaridade: 0.6387
-2025-04-03 14:47:28,488 - DEBUG -   Linha 9: 'Template 5C - Qual foi o preço máximo da ação ordinária da Gerdau em 08/05/2023?'
-2025-04-03 14:47:28,489 - DEBUG -     -> Exemplo norm: 'qual foi o preco maximo da acao ordinaria da gerdau em 08/05/2023 ', Similaridade: 0.7288
-2025-04-03 14:47:28,489 - DEBUG -   Linha 10: 'Template 6A - Qual foi a variação intradiária absoluta da ação da CSN no pregão de 08/05/2023?'
-2025-04-03 14:47:28,490 - DEBUG -     -> Exemplo norm: 'qual foi a variacao intradiaria absoluta da acao da csn no pregao de 08/05/2023 ', Similaridade: 0.4545
-2025-04-03 14:47:28,490 - DEBUG -   Linha 11: 'Template 7A - Qual ação do setor de mineração que teve a maior alta percentual no pregão do dia 08/05/2023?'
-2025-04-03 14:47:28,491 - DEBUG -     -> Exemplo norm: 'qual acao do setor de mineracao que teve a maior alta percentual no pregao do dia 08/05/2023 ', Similaridade: 0.4276
-2025-04-03 14:47:28,491 - DEBUG -   Linha 12: 'Template 7B - Qual ação do setor de bancário que teve a baixa percentual no pregão do dia 08/05/2023?'
-2025-04-03 14:47:28,492 - DEBUG -     -> Exemplo norm: 'qual acao do setor de bancario que teve a baixa percentual no pregao do dia 08/05/2023 ', Similaridade: 0.4460
-2025-04-03 14:47:28,492 - DEBUG -   Linha 13: 'Template 7C - Qual ação do setor de consumo não cíclico que a menor variação no dia 08/05/2023?'
-2025-04-03 14:47:28,493 - DEBUG -     -> Exemplo norm: 'qual acao do setor de consumo nao ciclico que a menor variacao no dia 08/05/2023 ', Similaridade: 0.4511
-2025-04-03 14:47:28,493 - DEBUG -   Linha 14: 'Template 7D - Qual a ação com o maior percentual de alta no pregão de 08/05/2023?'
-2025-04-03 14:47:28,494 - DEBUG -     -> Exemplo norm: 'qual a acao com o maior percentual de alta no pregao de 08/05/2023 ', Similaridade: 0.4874
-2025-04-03 14:47:28,494 - DEBUG -   Linha 15: 'Template 7E - Quais as cinco ações de maior percentual de alta no pregão de 08/05/2023?'
-2025-04-03 14:47:28,494 - DEBUG -     -> Exemplo norm: 'quais as cinco acoes de maior percentual de alta no pregao de 08/05/2023 ', Similaridade: 0.4320
-2025-04-03 14:47:28,495 - DEBUG -   Linha 16: 'Template 7F - Quais as cinco ações de maior percentual de baixa no pregão de 08/05/2023?'
-2025-04-03 14:47:28,495 - DEBUG -     -> Exemplo norm: 'quais as cinco acoes de maior percentual de baixa no pregao de 08/05/2023 ', Similaridade: 0.4444
-2025-04-03 14:47:28,495 - DEBUG -   Linha 17: 'Template 8A - Qual foi a variação intradiária absoluta da ação do IBovespa com o maior percentual de alta no pregão de 08/05/2023?'
-2025-04-03 14:47:28,496 - DEBUG -     -> Exemplo norm: 'qual foi a variacao intradiaria absoluta da acao do ibovespa com o maior percentual de alta no pregao de 08/05/2023 ', Similaridade: 0.3571
-2025-04-03 14:47:28,496 - DEBUG -   Linha 18: 'Template 8B - Qual foi o intervalo intradiário percentual da ação com o maior percentual de baixa entre as ações do IMAT no pregão de 08/05/2023?'
-2025-04-03 14:47:28,497 - DEBUG -     -> Exemplo norm: 'qual foi o intervalo intradiario percentual da acao com o maior percentual de baixa entre as acoes do imat no pregao de 08/05/2023 ', Similaridade: 0.3279
-2025-04-03 14:47:28,497 - INFO - !!! RESULTADO encontrar_pergunta_similar: nome='Template 1B', similaridade=1.0000
-2025-04-03 14:47:28,498 - DEBUG - Iniciando mapeamento semântico...
-2025-04-03 14:47:28,498 - DEBUG - Mapeado #DATA: 2023-05-08
-2025-04-03 14:47:28,498 - INFO - Mapeado #ENTIDADE: 'CBAV3' (Tipo NER: ORG)
-2025-04-03 14:47:28,499 - DEBUG - Texto final usado para buscar #VALOR_DESEJADO: 'o preço de abertura da CBAV3 em 08/05/2023'
-2025-04-03 14:47:28,499 - DEBUG - Buscando termo para frase normalizada: 'o preco de abertura da cbav3 em 08/05/2023' (Limiar: 0.7)
-2025-04-03 14:47:28,675 - INFO - Nenhum termo encontrado para 'o preço de abertura da CBAV3 em 08/05/2023' com similaridade >= 0.7
-2025-04-03 14:47:28,675 - WARNING - Não foi possível mapear #VALOR_DESEJADO para 'o preço de abertura da CBAV3 em 08/05/2023'.
-2025-04-03 14:47:28,675 - INFO - Mapeamentos semânticos finais: {'#DATA': '2023-05-08', '#ENTIDADE': 'CBAV3'}
-2025-04-03 14:47:28,676 - DEBUG - JSON final para stdout: {
-  "template_nome": "Template 1B",
+2025-04-03 16:05:47,239 - INFO - Encoding UTF-8 (com replace) forçado para stdout/stderr.
+2025-04-03 16:05:47,463 - INFO - Pacotes NLTK verificados/baixados.
+2025-04-03 16:05:49,213 - INFO - Modelo spaCy 'pt_core_news_sm' carregado.
+2025-04-03 16:05:49,213 - INFO - --- Iniciando processamento PLN (PID: 12184) ---
+2025-04-03 16:05:49,213 - INFO - Pergunta recebida: 'Qual foi o preço de fechamento da ação da CSN em 08/05/2023?'
+2025-04-03 16:05:49,214 - DEBUG - Tentando carregar arquivo: C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\perguntas_de_interesse.txt
+2025-04-03 16:05:49,214 - INFO - Arquivo C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\perguntas_de_interesse.txt lido com encoding: utf-8
+2025-04-03 16:05:49,215 - DEBUG - Carregadas 18 linhas de C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\perguntas_de_interesse.txt
+2025-04-03 16:05:49,215 - DEBUG - Tentando carregar arquivo: C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\resultado_similaridade.txt
+2025-04-03 16:05:49,216 - INFO - Arquivo C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\resultado_similaridade.txt lido com encoding: utf-8
+2025-04-03 16:05:49,217 - DEBUG - Carregadas 169 linhas de C:\Users\MENICIO JR\Desktop\Natural2SPARQL_V2\src\main\resources\resultado_similaridade.txt
+2025-04-03 16:05:49,223 - INFO - Dicionário 'resultado_similaridade.txt' carregado: 149 chaves.
+2025-04-03 16:05:49,276 - DEBUG - Texto para spaCy: 'Qual foi o preço de fechamento da ação da CSN em 08/05/2023?'
+2025-04-03 16:05:49,276 - DEBUG - Elementos extraídos (SPO): {'sujeito': ['o preço de fechamento da ação da CSN'], 'predicado': [], 'objeto': ['em 08/05/2023']}
+2025-04-03 16:05:49,276 - DEBUG - Entidades Nomeadas extraídas (NER): {'ORG': ['CSN']}
+2025-04-03 16:05:49,282 - INFO - Data explícita '08/05/2023' normalizada para: 2023-05-08
+2025-04-03 16:05:49,285 - DEBUG - Normalizada pergunta para template: 'qual foi o preco de fechamento da acao da csn em 08/05/2023 ' (Limiar: 0.65)
+2025-04-03 16:05:49,285 - DEBUG - Comparando com 18 templates.
+2025-04-03 16:05:49,285 - DEBUG -   Linha 1: 'Template 1A - Qual foi o preço de fechamento da ação da CSN em 08/05/2023?'
+2025-04-03 16:05:49,285 - DEBUG -     -> Exemplo norm: 'qual foi o preco de fechamento da acao da csn em 08/05/2023 ', Similaridade: 1.0000
+2025-04-03 16:05:49,286 - DEBUG -     -> NOVA MAIOR SIMILARIDADE! Nome: 'Template 1A'
+2025-04-03 16:05:49,286 - DEBUG -   Linha 2: 'Template 1B - Qual foi o preço de abertura da CBAV3 em 08/05/2023?'
+2025-04-03 16:05:49,286 - DEBUG -     -> Exemplo norm: 'qual foi o preco de abertura da cbav3 em 08/05/2023 ', Similaridade: 0.7500
+2025-04-03 16:05:49,286 - DEBUG -   Linha 3: 'Template 2A - Qual o código de negociação da ação da Gerdau?'
+2025-04-03 16:05:49,287 - DEBUG -     -> Exemplo norm: 'qual o codigo de negociacao da acao da gerdau ', Similaridade: 0.5660
+2025-04-03 16:05:49,287 - DEBUG -   Linha 4: 'Template 3A - Quais são as ações do setor elétrico?'
+2025-04-03 16:05:49,288 - DEBUG -     -> Exemplo norm: 'quais sao as acoes do setor eletrico ', Similaridade: 0.2268
+2025-04-03 16:05:49,288 - DEBUG -   Linha 5: 'Template 4A - Qual foi o volume negociado nas ações do setor bancário em 05/05/2023??'
+2025-04-03 16:05:49,289 - DEBUG -     -> Exemplo norm: 'qual foi o volume negociado nas acoes do setor bancario em 05/05/2023  ', Similaridade: 0.5649
+2025-04-03 16:05:49,289 - DEBUG -   Linha 6: 'Template 4B - Qual foi a quantidade de ações do Itau negociadas no pregão de 05/05/2023?'
+2025-04-03 16:05:49,290 - DEBUG -     -> Exemplo norm: 'qual foi a quantidade de acoes do itau negociadas no pregao de 05/05/2023 ', Similaridade: 0.4328
+2025-04-03 16:05:49,290 - DEBUG -   Linha 7: 'Template 5A - Qual foi o preço mínimo da ação da Vale em 08/05/2023?'
+2025-04-03 16:05:49,291 - DEBUG -     -> Exemplo norm: 'qual foi o preco minimo da acao da vale em 08/05/2023 ', Similaridade: 0.8246
+2025-04-03 16:05:49,291 - DEBUG -   Linha 8: 'Template 5B - Qual foi o preço mínima da ação preferencial do Itau em 05/05/2023?'
+2025-04-03 16:05:49,291 - DEBUG -     -> Exemplo norm: 'qual foi o preco minima da acao preferencial do itau em 05/05/2023 ', Similaridade: 0.6772
+2025-04-03 16:05:49,292 - DEBUG -   Linha 9: 'Template 5C - Qual foi o preço máximo da ação ordinária da Gerdau em 08/05/2023?'
+2025-04-03 16:05:49,292 - DEBUG -     -> Exemplo norm: 'qual foi o preco maximo da acao ordinaria da gerdau em 08/05/2023 ', Similaridade: 0.7460
+2025-04-03 16:05:49,292 - DEBUG -   Linha 10: 'Template 6A - Qual foi a variação intradiária absoluta da ação da CSN no pregão de 08/05/2023?'
+2025-04-03 16:05:49,293 - DEBUG -     -> Exemplo norm: 'qual foi a variacao intradiaria absoluta da acao da csn no pregao de 08/05/2023 ', Similaridade: 0.6143
+2025-04-03 16:05:49,293 - DEBUG -   Linha 11: 'Template 7A - Qual ação do setor de mineração que teve a maior alta percentual no pregão do dia 08/05/2023?'
+2025-04-03 16:05:49,294 - DEBUG -     -> Exemplo norm: 'qual acao do setor de mineracao que teve a maior alta percentual no pregao do dia 08/05/2023 ', Similaridade: 0.3791
+2025-04-03 16:05:49,294 - DEBUG -   Linha 12: 'Template 7B - Qual ação do setor de bancário que teve a baixa percentual no pregão do dia 08/05/2023?'
+2025-04-03 16:05:49,295 - DEBUG -     -> Exemplo norm: 'qual acao do setor de bancario que teve a baixa percentual no pregao do dia 08/05/2023 ', Similaridade: 0.3946
+2025-04-03 16:05:49,295 - DEBUG -   Linha 13: 'Template 7C - Qual ação do setor de consumo não cíclico que a menor variação no dia 08/05/2023?'
+2025-04-03 16:05:49,296 - DEBUG -     -> Exemplo norm: 'qual acao do setor de consumo nao ciclico que a menor variacao no dia 08/05/2023 ', Similaridade: 0.3972
+2025-04-03 16:05:49,296 - DEBUG -   Linha 14: 'Template 7D - Qual a ação com o maior percentual de alta no pregão de 08/05/2023?'
+2025-04-03 16:05:49,297 - DEBUG -     -> Exemplo norm: 'qual a acao com o maior percentual de alta no pregao de 08/05/2023 ', Similaridade: 0.4724
+2025-04-03 16:05:49,297 - DEBUG -   Linha 15: 'Template 7E - Quais as cinco ações de maior percentual de alta no pregão de 08/05/2023?'
+2025-04-03 16:05:49,298 - DEBUG -     -> Exemplo norm: 'quais as cinco acoes de maior percentual de alta no pregao de 08/05/2023 ', Similaridade: 0.4060
+2025-04-03 16:05:49,298 - DEBUG -   Linha 16: 'Template 7F - Quais as cinco ações de maior percentual de baixa no pregão de 08/05/2023?'
+2025-04-03 16:05:49,299 - DEBUG -     -> Exemplo norm: 'quais as cinco acoes de maior percentual de baixa no pregao de 08/05/2023 ', Similaridade: 0.4179
+2025-04-03 16:05:49,299 - DEBUG -   Linha 17: 'Template 8A - Qual foi a variação intradiária absoluta da ação do IBovespa com o maior percentual de alta no pregão de 08/05/2023?'
+2025-04-03 16:05:49,300 - DEBUG -     -> Exemplo norm: 'qual foi a variacao intradiaria absoluta da acao do ibovespa com o maior percentual de alta no pregao de 08/05/2023 ', Similaridade: 0.4773
+2025-04-03 16:05:49,300 - DEBUG -   Linha 18: 'Template 8B - Qual foi o intervalo intradiário percentual da ação com o maior percentual de baixa entre as ações do IMAT no pregão de 08/05/2023?'
+2025-04-03 16:05:49,301 - DEBUG -     -> Exemplo norm: 'qual foi o intervalo intradiario percentual da acao com o maior percentual de baixa entre as acoes do imat no pregao de 08/05/2023 ', Similaridade: 0.5131
+2025-04-03 16:05:49,301 - INFO - !!! RESULTADO encontrar_pergunta_similar: nome='Template 1A', similaridade=1.0000
+2025-04-03 16:05:49,302 - DEBUG - Iniciando mapeamento semântico...
+2025-04-03 16:05:49,302 - DEBUG - Mapeado #DATA: 2023-05-08
+2025-04-03 16:05:49,302 - INFO - Mapeado #ENTIDADE: 'CSN' (Tipo NER: ORG)
+2025-04-03 16:05:49,303 - DEBUG - Texto final usado para buscar #VALOR_DESEJADO: 'o preço de fechamento da ação da CSN'
+2025-04-03 16:05:49,303 - DEBUG - Buscando termo para frase normalizada: 'o preco de fechamento da acao da csn' (Limiar: 0.7)
+2025-04-03 16:05:49,511 - DEBUG -   -> Novo melhor (sinônimo 'preco de fechamento'): chave 'precofechamento' similaridade 0.6909 >= 0.7
+2025-04-03 16:05:49,523 - INFO - Melhor termo encontrado para 'o preço de fechamento da ação da CSN': 'precofechamento' (Similaridade: 0.69)
+2025-04-03 16:05:49,523 - INFO - Mapeado #VALOR_DESEJADO para chave dicionário: 'precofechamento'
+2025-04-03 16:05:49,523 - INFO - Mapeamentos semânticos finais: {'#DATA': '2023-05-08', '#ENTIDADE': 'CSN', '#VALOR_DESEJADO': 'precofechamento'}
+2025-04-03 16:05:49,524 - DEBUG - JSON final para stdout: {
+  "template_nome": "Template 1A",
   "mapeamentos": {
     "#DATA": "2023-05-08",
-    "#ENTIDADE": "CBAV3"
+    "#ENTIDADE": "CSN",
+    "#VALOR_DESEJADO": "precofechamento"
   },
   "_debug_info": {
     "elementos_extraidos": {
       "sujeito": [
-        "o preço de abertura da CBAV3 em 08/05/2023"
+        "o preço de fechamento da ação da CSN"
       ],
       "predicado": [],
-      "objeto": []
+      "objeto": [
+        "em 08/05/2023"
+      ]
     },
     "entidades_nomeadas": {
       "ORG": [
-        "CBAV3"
+        "CSN"
       ]
     },
     "data_extraida": "2023-05-08",
     "similaridade_template": 1.0,
-    "linha_template_correspondente": "Template 1B - Qual foi o preço de abertura da CBAV3 em 08/05/2023?"
+    "linha_template_correspondente": "Template 1A - Qual foi o preço de fechamento da ação da CSN em 08/05/2023?"
   }
 }
-2025-04-03 14:47:28,676 - INFO - --- Processamento PLN concluído ---
+2025-04-03 16:05:49,524 - INFO - --- Processamento PLN concluído ---

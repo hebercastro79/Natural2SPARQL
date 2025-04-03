@@ -123,7 +123,7 @@ public class QuestionProcessor {
             // --- Chamada Python ---
             String pythonExecutable = "python"; // Ou o caminho completo se não estiver no PATH
 
-            String scriptPath = "C:/Users/MENICIO JR/Desktop/Programa_heber2- antes/src/main/resources/pln_processor.py";
+            String scriptPath = "C:/Users/MENICIO JR/Desktop/Natural2SPARQL_V2/src/main/resources/pln_processor.py";
             logger.trace("Exec Py: {} {} \"{}\"", pythonExecutable, scriptPath, pergunta); // Trace
             ProcessBuilder pb = new ProcessBuilder(pythonExecutable, scriptPath, pergunta);
             pb.redirectErrorStream(true); // Junta stdout e stderr
