@@ -58,21 +58,6 @@ Este projeto visa facilitar o acesso a dados armazenados em grafos de conhecimen
     ```
     *   **Observação:** Atualmente, algumas dependências podem estar sendo gerenciadas via `<scope>system</scope>` e a pasta `lib/`. O ideal é migrá-las para o gerenciamento padrão do Maven. Por enquanto, certifique-se de que a pasta `lib/` foi clonada corretamente.
 
-4.  **Configure o Caminho da Ontologia:**
-    <!-- Explique ONDE o usuário precisa configurar o caminho para o arquivo .owl. É um arquivo de propriedades? Uma variável de ambiente? Hardcoded (precisa mudar no código)? Exemplo: -->
-    *   Verifique a classe `[NomeDaClasseDeConfiguracao.java]` ou o arquivo `[nome_do_arquivo.properties]` para definir o caminho correto do seu arquivo de ontologia.
 
 ## ▶️ Como Usar
 
-<!-- Explique como executar o framework. É uma aplicação de linha de comando? Uma biblioteca? -->
-
-<!-- Exemplo para Linha de Comando -->
-Após a instalação, você pode executar a classe principal (ex: `br.com.n2s.Principal`):
-
-```bash
-# Exemplo (pode precisar ajustar o classpath dependendo de como as dependências são gerenciadas)
-# Se usar 'mvn exec:java' (recomendado após corrigir dependências):
-mvn exec:java -Dexec.mainClass="br.com.n2s.Principal"
-
-# Ou executando o JAR gerado (pode precisar de um JAR com dependências ou ajustar o classpath):
-# java -cp target/Natural2SPARQL-1.0-SNAPSHOT.jar:lib/* br.com.n2s.Principal
